@@ -1,0 +1,370 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+a, em, img, center, ol, ul, li, article, aside, embed,
+footer, header, menu, nav, section, time, video {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	/*vertical-align: baseline;*/
+}
+
+body ,html{
+	font-family: Helvetica;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+
+.row .header {
+	margin: 0px;
+}
+
+.header {
+  width: 100%;
+  height: 255px;
+  background-color: #010101;
+}
+
+.header_text {
+  padding: 130px 0px 40px 35px;
+  color: #f275b7;
+  display: block;
+}
+
+#header_shopName {
+  font-size: 48px;
+  font-weight: bold;
+	color: #f275b7;
+}
+
+#header_tagline {
+  font-size: 30px;
+  font-weight: normal;
+	color: #f275b7;
+}
+
+.nav {
+  display: inline-block;
+	width: 100%;
+	background-color: #cabde6;
+  color: #010101;
+  list-style: none;
+  text-align: center;
+	padding-left: 50px;
+}
+
+.nav > div:first-child {
+	border-left: 1px solid gray;
+}
+
+.nav > div {
+	padding: 12px 0px;
+	text-align: center;
+	border-right: 1px solid gray;
+}
+
+.nav > div > a{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #010101;
+	text-decoration: none;
+}
+
+.nav > div:hover {
+  background-color: #5125ad;
+  text-decoration: none;
+	padding: 12px 5px;
+	text-align: center;
+}
+
+.nav > div > a:hover {
+  color: #cabde6;
+  font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	padding: 12px 5px;
+}
+
+.nav > div:active, .nav > div.active {
+	text-decoration: none;
+	background-color: #5125ad;
+	color: #cabde6;
+	font-weight: bold;
+	padding: 12px 5px;
+}
+
+.nav > div > a:active, .nav > div > a.active {
+	text-decoration: none;
+	color: #cabde6;
+	font-weight: bold;
+}
+
+.content {
+	margin: 10px 0px 10px 35px;
+	overflow-wrap: break-word;
+}
+
+.content h2 {
+	font-family: Helvetica;
+	font-size: 24px;
+	color: #5125ad;
+}
+
+.content p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000;
+}
+
+.linespace {
+	padding: 10px 0px;
+}
+
+.home {
+	margin: 0px;
+}
+
+.readMore {
+	display: none;
+}
+
+/*
+a:link {
+    color: #cabde6;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #401d8a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f275b7;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #5b41a2;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
+
+.wigImgSampling img {
+	/*display: inline;*/
+	margin: 0px 20px;
+	width: 100%;
+}
+
+.testimonnials {
+	margin-top: 20px;
+}
+
+.quote h2 {
+  font-size: 80px;
+	font-family: Open-sans;
+	margin-right: -40px;
+}
+
+.testimonnials div > p {
+	font-style: italic;
+	padding: 10px;
+	margin: 10px 0px 10px 20px;
+	overflow-wrap: break-word;
+}
+
+.testimonnials div > p:not(:first-child){
+	display: none;
+}
+
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: #010101;
+	font-size: 16px;
+	color: #ffffff;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.footer h2 {
+	font-size: 22px;
+	color: #5125ad;
+	font-size: 22px;
+}
+
+.contact_title {
+	color: #f275b7;
+	font-weight: bold;
+}
+
+.footer a {
+	color: #ffffff;
+}
+
+.footer a:hover {
+	color: #f275b7;
+}
+
+.row .nav {
+	margin-left: 15px;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+}
+
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+#support a:link {
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+#socialMedia img {
+	width: 50px;
+}
+
+/*Media-queries*/
+/* If the screen size is less than 768px, set the logo img size to width of 200px, set the font-size of <h1> to 30px and of <h2> to 20px, and add padding */
+@media only screen and (max-width: 767px) {
+  .header_logo {
+		height: 60px;
+		margin: 0px;
+  }
+
+	.header_text {
+		padding-left: 0px;
+  }
+
+	#header_shopName {
+    font-size: 26px;
+		padding-left: 75px;
+		padding-top:
+  }
+
+	#header_tagline {
+    font-size: 18px;
+		padding-left: 75px;
+  }
+
+	div.row.nav {
+		text-align: center;
+		vertical-align: middle;
+		padding-left: 0px;
+		}
+
+	.nav > div {
+		padding: 12px 20px;
+		margin: 0px;
+		border-right: 1px solid gray;
+		}
+
+	.nav > div:first-child {
+		margin-left: 0px;
+		border-left: 1px solid gray;
+		}
+
+	.nav > div > a{
+		font-size: 16px;
+		text-align: center;
+		vertical-align: middle;
+		padding: 12px 0px;
+		}
+
+		.nav > div:hover {
+			padding: 12px 0px;
+			}
+
+		.nav > div > a:hover {
+		  font-weight: bold;
+			padding: 0px;
+			text-align: center;
+			vertical-align: middle;
+			}
+
+		.nav > div > a:active, .nav > div > a.active {
+			font-size: 15px;
+			padding: 0px;
+			}
+
+			.content {
+				margin: 10px;
+			}
+
+			.wigImgSampling img {
+				margin: 0 auto;
+				width: 75%;
+			}
+
+			.quote h2 {
+			  font-size: 60px;
+				margin: 10px;
+			}
+
+			.testimonnials div > p {
+				padding: 25px;
+				margin: 15px 10px 0px 10px;
+			}
+
+}
+
+/* If the screen size is 768px or more, set the logo img size to width of 225px, set the font-size of <h1> to 48px and of <h2> to 30px */
+
+@media only screen and (min-width: 768px) {
+  .header_logo {
+		height: 225px;
+		padding-top: 0px;
+  }
+
+	#header_shopName {
+    font-size: 48px;
+		padding-left: 15px;
+  }
+
+	#header_tagline {
+    font-size: 30px;
+		padding-left: 15px;
+  }
+
+	div.row.nav {
+		text-align: center;
+		vertical-align: middle;
+		padding: 0px;
+		}
+
+	.nav > div > a{
+		font-size: 16px;
+		text-align: center;
+		vertical-align: middle;
+		padding: 12px 0px;
+		}
+
+	.nav > div:hover {
+		padding: 12px 0px;
+		}
+
+	.nav > div > a:hover {
+	  font-weight: bold;
+		padding: 0px;
+		text-align: center;
+		vertical-align: middle;
+		}
+
+	.nav > div > a:active, .nav > div > a.active {
+		font-size: 15px;
+		padding: 0px;
+		}
+
+}
